@@ -2,22 +2,22 @@
 Application Streamlit pour l'analyse K-means du dataset Wine Quality
 """
 
-import streamlit as st
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import KMeans
-from sklearn.decomposition import PCA
-from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
-from sklearn.model_selection import KFold
-import joblib
-import pickle
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-import warnings
+import streamlit as st # Interface utilisateur
+import pandas as pd # Manipulation des données
+import numpy as np # Calculs numériques
+import matplotlib.pyplot as plt # Visualisation
+import seaborn as sns # Visualisation avancée
+from sklearn.preprocessing import StandardScaler # Normalisation des données
+from sklearn.cluster import KMeans # Algorithme K-means
+from sklearn.decomposition import PCA # Réduction de dimension
+from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score # Métriques d'évaluation
+from sklearn.model_selection import KFold # Validation croisée
+import joblib # Sauvegarde et chargement de modèles
+import pickle # Sérialisation d'objets
+import plotly.express as px # Visualisation interactive
+import plotly.graph_objects as go # Graphiques interactifs
+from plotly.subplots import make_subplots # Sous-graphiques interactifs
+import warnings # Gestion des avertissements
 warnings.filterwarnings('ignore')
 
 # Configuration de la page
